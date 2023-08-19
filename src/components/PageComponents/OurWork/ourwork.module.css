@@ -1,0 +1,68 @@
+.StillCard {
+    background-color: #343a40;
+    color: white;
+    border-color: none;
+    margin-bottom: 4em;
+}
+
+.StillCard:hover {
+    border-color: none!important;
+    transform: none!important;
+}
+
+
+.CovidText {
+    margin: 1rem auto;
+    padding: 0 1rem;
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: 700;
+    text-shadow: 2px 2px 3px gray;
+    color: red;
+
+}
+
+
+@media screen and (min-width: 2400px) {
+
+
+}
+
+
+@media screen and (max-width: 168px) {
+
+    
+}
+
+
+@media screen and (max-width: 1280px) {
+
+}
+
+
+@media screen and (max-width: 980px) {
+
+
+}
+
+@media screen and (max-width: 767px) {
+
+
+}
+
+@media screen and (max-width: 480px) {
+.CovidText {
+    margin: auto;
+    padding: 0 1rem;
+    font-size: 16px;
+    text-shadow: none;
+    line-height: 32px;
+
+}
+
+}
+
+@media screen and (max-width: 360px) {
+
+
+}

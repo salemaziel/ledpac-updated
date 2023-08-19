@@ -1,0 +1,93 @@
+.ProductTitle {
+    font-size: 1.5rem;
+    margin: auto;
+    padding: 10px 0 10px;
+    text-align: left;
+}
+
+.Leading {
+    margin: 1rem auto;
+    padding: 3rem 0 0;
+}
+
+.ProductBox {
+    padding: 0 0 1rem 0;
+    display: flex;
+}
+
+.CategoryRow {
+    display: flex;
+    margin: auto;
+}
+
+.CategoryRow div h3 a:hover {
+    text-decoration: underline;
+    -moz-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    -webkit-transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+    -ms-transition:  0.2s ease-in-out, color 0.2s ease-in-out;
+    transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.Content {
+    width: 75%;
+    margin: auto;
+}
+
+
+.CardContainer{ 
+    padding: 0;
+    margin: auto;
+}
+
+@media screen and (min-width: 2400px) {
+    .CategoryRow {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 1680px) {
+    .CategoryRow {
+        display: flex;
+    }
+}
+
+
+@media screen and (max-width: 1280px) {
+    .CategoryRow {
+        display: flex;
+    }
+}
+@media screen and (max-width: 980px) {
+    .CategoryRow {
+        display: flex;
+    }
+    .Content {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .CategoryRow {
+        display: inline;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .CategoryRow {
+        display: inline;
+    }
+    .CardContainer{ 
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .CategoryRow {
+        display: inline;
+    }
+}
