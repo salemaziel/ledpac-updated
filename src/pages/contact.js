@@ -15,4 +15,4 @@ description='Contact us to request an estimate or get further information by fil
     <ContactPage />
   </Layout>
 );
-export default Contact;
+export default Contact

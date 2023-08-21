@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import Banner2 from '../../../images/banner2.png'
+import Banner2 from '../../../../images/banner2.png'
 
 
 const LSidebar = () => (

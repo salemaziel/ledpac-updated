@@ -2,14 +2,12 @@ import React from "react";
 import Section from "./Section";
 import ContentCards from "./ContentCards";
 
-import {
-  GuardianStorm1
-} from "../../../images/index"
+import GuardianStorm1 from '../../../images/guardian/guardian-storm-light1.jpg'
 
 import CarPurifier from '../../../images/mobile-air-purifier-disinfectant/car-disinfectant-pdf.jpg-003.jpg'
 
 
-import {CardContainer, } from './products.module.css'
+import { CardContainer } from './products.module.css'
 
 //import Fade from 'react-reveal/Fade'
 
@@ -25,7 +23,7 @@ function ContentCardsSection(props) {
     >
       <div className={CardContainer}>
         <div style={{margin: 'auto', padding: '0'}}>
-        {/*<Fade left big>*/}
+        {/*<Fade left big> triggerOnce*/}
         <ContentCards
           items={[
             {

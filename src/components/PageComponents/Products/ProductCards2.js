@@ -28,9 +28,9 @@ function ProductCards2(props) {
                     <strong>{item.subtitle}</strong>
                   </Card.Subtitle>
                 </Card.Body>
-                <Accordion.Toggle as={Card.Header} eventKey="0">
+                <Accordion.Item as={Card.Header} eventKey="0">
                   Learn More
-                </Accordion.Toggle>
+                </Accordion.Item>
                 <Accordion.Collapse eventKey="0">
                   <Card.Body>
                     {" "}

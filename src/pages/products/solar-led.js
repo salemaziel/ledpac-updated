@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from "../../components/Layout/layout"
 import SolarPage from '../../components/PageComponents/Products/solar/SolarPage'
-import Seo from "../../components/seo";
+//import Seo from "../../components/seo";
 
 //import { GatsbySeo } from 'gatsby-plugin-next-seo';
 

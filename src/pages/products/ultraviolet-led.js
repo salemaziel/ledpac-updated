@@ -2,12 +2,12 @@ import React from 'react'
 
 import Layout from "../../components/Layout/layout"
 import UVCPage from '../../components/PageComponents/Products/uvc/UVCPage'
-import Seo from "../../components/seo";
+//import Seo from "../../components/seo";
 
 //import { GatsbySeo } from 'gatsby-plugin-next-seo';
 
 
-const UVC = () => (
+const Uvc = () => (
     <Layout>
         {/*<Seo title="UltraViolet (UV-C) LED Lights" />*/}
         {/*<GatsbySeo
@@ -19,4 +19,4 @@ description="LEDpac's new powerful patented UV-C LED system design allows creati
 
 )
 
-export default UVC
+export default Uvc

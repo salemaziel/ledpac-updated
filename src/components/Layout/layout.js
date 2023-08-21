@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from "./header";
+import HeaderNav from "./headerNav";
 import Footer from './footer'
 //import "./layout.scss";
 import '../../css/main.css'
@@ -30,16 +30,17 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      {/*<Header2 siteTitle={data.site.siteMetadata.title} />*/}
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <HeaderNav siteTitle={data.site.siteMetadata.title} />
         {children}
       <Footer />
     </>
   );
 };
 
+
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
-export default Layout;
+
+export default Layout

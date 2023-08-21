@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "gatsby";
-import {cta, inner, actions } from "./PageComponents/Home/home.module.css";
+import {cta, inner, actions} from "./home.module.css";
 
 import Col from "react-bootstrap/Col";
+//import Fade from 'react-reveal/Fade';
+import { Fade } from "react-awesome-reveal";
 
 
-const CTA = () => (
+const SectionCTA = () => (
   <section id="two" className={cta}>
-
+    <Fade bottom triggerOnce>
     <div className={inner}>
       <Col>
         <header>
@@ -31,7 +33,8 @@ const CTA = () => (
         </ul>
       </Col>
     </div>
+    </Fade>
   </section>
 );
 
-export default CTA;
+export default SectionCTA;

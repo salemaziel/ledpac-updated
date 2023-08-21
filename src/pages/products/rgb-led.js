@@ -2,12 +2,12 @@ import React from "react";
 
 import Layout from "../../components/Layout/layout";
 import RgbPage from "../../components/PageComponents/Products/rgb/RgbPage";
-import Seo from "../../components/seo";
+//import Seo from "../../components/seo";
 //import SimpleReactLightbox from "simple-react-lightbox";
 
 //import { GatsbySeo } from "gatsby-plugin-next-seo";
 
-const RGB = () => (
+const Rgb = () => (
     <Layout>
         {/*<SimpleReactLightbox>*/}
 
@@ -23,4 +23,4 @@ const RGB = () => (
 
 );
 
-export default RGB;
+export default Rgb

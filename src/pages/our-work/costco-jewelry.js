@@ -3,7 +3,7 @@ import Layout from "../../components/Layout/layout";
 
 import Page from "../../components/PageComponents/OurWork/Costco/Page";
 //import SimpleReactLightbox from "simple-react-lightbox";
-import Seo from "../../components/seo";
+//import Seo from "../../components/seo";
 
 //import { GatsbySeo } from 'gatsby-plugin-next-seo';
 

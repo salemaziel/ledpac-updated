@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../../components/Layout/layout";
 
 import Page from "../../components/PageComponents/OurWork/Covid19/Page";
-import Seo from "../../components/seo";
+//import Seo from "../../components/seo";
 
 //import { GatsbySeo } from 'gatsby-plugin-next-seo';
 

@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/Layout/layout";
 import OurWorkPage from "../components/PageComponents/OurWork/OurWorkPage";
 //import SimpleReactLightbox from "simple-react-lightbox";
-import Seo from "../components/seo";
+//import Seo from "../components/seo";
 //import { GatsbySeo } from 'gatsby-plugin-next-seo';
 
 

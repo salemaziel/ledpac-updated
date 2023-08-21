@@ -1,6 +1,7 @@
 import React from "react";
 import { navigate } from "gatsby";
 import Form from "react-bootstrap/Form";
+import Row from "react-bootstrap/Row";
 //import Button from 'react-bootstrap/Button'
 
 function encode(data) {
@@ -9,7 +10,8 @@ function encode(data) {
     .join("&");
 }
 
-export default function ContactForm() {
+//export default function ContactForm() {
+const ContactForm = () => {
   const [state, setState] = React.useState({});
 
   const handleChange = (e) => {
@@ -43,7 +45,7 @@ export default function ContactForm() {
         <input type="hidden" name="bot-field" />
         <input type="hidden" name="form-name" value="ContactForm" />
 
-        <Form.Row>
+        <Row>
           {/*<Col>*/}
           <Form.Group>
             <label style={{ display: "none" }} htmlFor="name">
@@ -57,9 +59,9 @@ export default function ContactForm() {
               required
             />
           </Form.Group>
-        </Form.Row>
+        </Row>
 
-        <Form.Row>
+        <Row>
           {/*<Col>*/}
           <Form.Group>
             <label htmlFor="email" style={{ display: "none" }}>
@@ -76,8 +78,8 @@ export default function ContactForm() {
           </Form.Group>
           {/*  </Col> 
           <Col>*/}
-        </Form.Row>
-        <Form.Row>
+        </Row>
+        <Row>
           <Form.Group>
             <label htmlFor="tel" style={{ display: "none" }}>
               Phone
@@ -91,9 +93,9 @@ export default function ContactForm() {
             />
           </Form.Group>
           {/* </Col> */}
-        </Form.Row>
+        </Row>
 
-        <Form.Row>
+        <Row>
           <Form.Group>
             <label htmlFor="textarea" style={{ display: "none" }}>
               Message
@@ -107,7 +109,7 @@ export default function ContactForm() {
             />
           </Form.Group>
           {/* </Col> */}
-        </Form.Row>
+        </Row>
 
         <Form.Group>
           <ul className="actions">
@@ -127,3 +129,5 @@ export default function ContactForm() {
     </>
   );
 }
+
+export default ContactForm

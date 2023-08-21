@@ -1,8 +1,8 @@
-import * as React from "react";
+/*import * as React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import {Header} from "./header.module.css";
-import SideNav, { MenuIcon } from "react-simple-sidenav";
+//import SideNav, { MenuIcon } from "react-simple-sidenav";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import NavItem from "react-bootstrap/NavItem";
@@ -150,3 +150,4 @@ Header2.defaultProps = {
 };
 
 export default Header2;
+*/
