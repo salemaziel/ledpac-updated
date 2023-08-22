@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 import Container from "react-bootstrap/Container"
 import Nav from "react-bootstrap/Nav"
 import Navbar from "react-bootstrap/Navbar"
+import NavbarBrand from "react-bootstrap/NavbarBrand"
+import NavbarToggle from "react-bootstrap/NavbarToggle"
 import Offcanvas from "react-bootstrap/Offcanvas"
 
 import LogoLight from '../../images/logo-light-shadow.png'
@@ -16,23 +18,25 @@ const HeaderNav = () => {
       <header className={Header}>
         {/* {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand) => ( */}
         {["lg"].map(expand => (
-          <Navbar key={expand} expand={expand} className="" data-bs-theme="dark">
+          <Navbar expand={expand} className="bg-body-tertiary" data-bs-theme="dark" >
             <Container fluid>
-              <Navbar.Brand href="#">
+              <NavbarBrand as={Link} to="/">
                 {" "}
-                <img src={LogoLight} alt="LEDpac logo" width={150} />
-              </Navbar.Brand>
-              <Navbar.Toggle
+                <img src={LogoLight} alt="LEDpac logo" width={125} className="mt-2" />
+              </NavbarBrand>
+              <NavbarToggle
                 aria-controls={`offcanvasNavbar-expand-${expand}`}
+                style={{ fontSize: "1.25rem", height: "2.5rem" }}
               />
               <Navbar.Offcanvas
                 id={`offcanvasNavbar-expand-${expand}`}
                 aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
                 placement="end"
+                data-bs-theme="dark"
               >
                 <Offcanvas.Header closeButton>
                   <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                    Offcanvas
+                  <img src={LogoLight} alt="LEDpac logo" width={150} />
                   </Offcanvas.Title>
                 </Offcanvas.Header>
                 <Offcanvas.Body>

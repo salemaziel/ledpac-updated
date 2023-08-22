@@ -12,12 +12,11 @@ const SectionOne = () => {
     <div className="inner">
       <header className="major">
         <h2>Costco Jewelry</h2>
-        <p></p>
       </header>
       {/* Content */}
       <div className="content">
         <div className="image fit">
-          <img src={CostcoAfter} alt="Costco display: after photo" />
+          <img src={CostcoAfter} alt="Costco display: after" />
         </div>
         <h3>A Case Study: Do Brighter Lights Boost Jewelry Sales? </h3>
         <p>

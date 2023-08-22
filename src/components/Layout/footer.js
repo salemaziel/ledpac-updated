@@ -1,21 +1,19 @@
 import React from 'react'
 
-import {
-    LogoLight
-  } from '../../images/index'
+import LogoLight from '../../images/logo-light-shadow.png'
 
-  import { FaEnvelope, FaFacebook, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa'
+//  import { FaEnvelope, FaFacebook, FaLinkedin, FaInstagram, FaTwitter } from 'react-icons/fa'
 
 import { Link } from 'gatsby'
 
 
-const Footer = (props) => {
+const Footer = () => {
     return(
         <>
 <footer className="py-5 bg-black">
   <div className="container text-center pb-5 border-bottom">
     <Link to="#" className="d-inline-block mx-auto mb-4" >
-      <img className="img-fluid" src={LogoLight} alt width="150px" />
+      <img className="img-fluid" src={LogoLight} alt='LEDPac logo' width="150px" />
     </Link>
     <ul className="d-flex flex-wrap justify-content-center align-items-center list-unstyled mb-4">
       <li><Link to="/about" className="link-secondary mr-4 text-white" >About</Link></li>
@@ -43,7 +41,7 @@ const Footer = (props) => {
   </div>
   <div className="mb-5" />
   <div className="container">
-    <p className="text-center">All rights reserved © LEDpac LLC 2021</p>
+    <p className="text-center">All rights reserved © LEDpac LLC {new Date().getFullYear()}{" "}</p>
   </div>
 </footer>
 

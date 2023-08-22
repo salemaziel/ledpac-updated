@@ -1,29 +1,29 @@
 import React from "react";
 
 import {
-  CobNewGen,
-  CobConnector,
-  CobLedStrip,
+//  CobNewGen,
+//  CobConnector,
+//  CobLedStrip,
   //  CobLedStrip2,
   //  CobLedStrip3,
-  CobLedStrip4,
-  CobLedStrip5,
+//  CobLedStrip4,
+//  CobLedStrip5,
   //  CobLighting,
-  CobSpecs,
-  CobSpecs2,
-  GuardianStorm1,
-  GuardianStorm2,
-  GuardianStorm4,
+// CobSpecs,
+//  CobSpecs2,
+//  GuardianStorm1,
+//  GuardianStorm2,
+//  GuardianStorm4,
   GuardianStorm5,
-  GuardianStorm6,
+//  GuardianStorm6,
   GuardianStorm7,
   GuardianStorm8,
   GuardianStorm9,
   GuardianStorm10,
   GuardianStormBanner2,
-  GuardianStormBanner3,
-  GuardianIllustration1,
-  GuardianIllustration2,
+//  GuardianStormBanner3,
+//  GuardianIllustration1,
+//  GuardianIllustration2,
   GuardianIllustration3,
   Guardian6,
   Guardian4
@@ -40,7 +40,6 @@ const SectionTwo = () => (
   <section>
     <div className="box alt">
       <div className="row gtr-uniform gtr-50">
-        {/*<div className={cobtyles.Cob}>*/}
         <div className={ProductBox}>
           <Row className={ProductRow}>
             <Col>
@@ -51,7 +50,7 @@ const SectionTwo = () => (
             </Col>
             <Col>
               <span className="image fit">
-                <img src={GuardianStorm10} alt />
+                <img src={GuardianStorm10} alt="Guardian Storm Commercial Lighting 1" />
               </span>
             </Col>
           </Row>
@@ -62,7 +61,7 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={GuardianIllustration3} alt />
+              <img src={GuardianIllustration3} alt="Guardian Storm Commercial Lighting 2" />
             </span>
           </Col>
 
@@ -99,7 +98,7 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={GuardianStorm9} alt />
+              <img src={GuardianStorm9} alt="Guardian Storm Commercial Lighting 3" />
             </span>
           </Col>
           <Col>
@@ -127,13 +126,13 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={Guardian4} alt />
+              <img src={Guardian4} alt="Guardian Storm Commercial Lighting 4" />
             </span>
           </Col>
 
           <Col>
             <span className="image fit">
-              <img src={Guardian6} alt />
+              <img src={Guardian6} alt="Guardian Storm Commercial Lighting 5" />
             </span>
 
           </Col>
@@ -143,37 +142,36 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={GuardianStorm8} alt />
-            </span>
-
-          </Col>
-        </Row>
-
-        {/* <div className="col-12"><span className="image fit"><img src={Airport4} alt /></span></div>*/}
-
-        <Row className={ProductRow}>
-          <Col>
-            <span className="image fit">
-              <img src={GuardianStorm5} alt />
-            </span>
-          </Col>
-
-        </Row>
-        <Row className={ProductRow}>
-          <Col>
-            <span className="image fit">
-              <img src={GuardianStorm7} alt />
+              <img src={GuardianStorm8} alt="Guardian Storm Commercial Lighting 6" />
             </span>
 
           </Col>
         </Row>
 
 
+        <Row className={ProductRow}>
+          <Col>
+            <span className="image fit">
+              <img src={GuardianStorm5} alt="Guardian Storm Commercial Lighting 7" />
+            </span>
+          </Col>
+
+        </Row>
+        <Row className={ProductRow}>
+          <Col>
+            <span className="image fit">
+              <img src={GuardianStorm7} alt="Guardian Storm Commercial Lighting 8" />
+            </span>
+
+          </Col>
+        </Row>
+
+
 
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={GuardianStormBanner2} alt />
+              <img src={GuardianStormBanner2} alt="Guardian Storm Commercial Lighting 9" />
             </span>
           </Col>
         </Row>

@@ -1,21 +1,31 @@
-import React from "react";
-import Layout from "../components/Layout/layout";
-//import Seo from "../components/seo";
-//import { GatsbySeo } from 'gatsby-plugin-next-seo';
+import React from "react"
+import { graphql } from "gatsby"
+import Layout from "../components/Layout/layout"
 
-
-
-import HomgePage from "../components/PageComponents/Home/HomePage";
+import HomePage from "../components/PageComponents/Home/HomePage"
+import SEO from "../components/seoNew"
 
 const IndexPage = () => (
   <Layout>
-    {/*<Seo title="LEDpac, LLC" />*/}
-    {/*<GatsbySeo
-      title='Lighting Solutions for San Diego County'
-      description='San Diego County Distributor of Cutting Edge LED Technology including UV-C Disinfectant, Solar Powered, RGB, and ChipOnBoard LED'
-/>*/}
-    <HomgePage />
+    <HomePage />
   </Layout>
-);
+)
 
-export default IndexPage;
+export default IndexPage
+
+export const Head = () => (
+  <SEO
+    title="Lighting Solutions for San Diego County | LEDPac"
+    description="San Diego County Distributor of Cutting Edge LED Technology including UV-C Disinfectant, Solar Powered, RGB, and ChipOnBoard LED"
+  />
+)
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

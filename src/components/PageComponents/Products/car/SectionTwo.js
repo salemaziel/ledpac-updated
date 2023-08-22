@@ -48,7 +48,7 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={CarPurifier6} alt />
+              <img src={CarPurifier6} alt="UVC LED Air Purifier 1" />
             </span>
           </Col>
           <Col>
@@ -71,66 +71,66 @@ const SectionTwo = () => (
         <br />
         <Row className={ProductRow}>
           <Col>
-            <img src={Car1} className="img-fluid" />
+            <img src={Car1} className="img-fluid" alt="UVC LED Air Purifier 2" />
           </Col>
         </Row>
         <Row className={ProductRow}>
           <Col>
-            <img src={Car9} className="img-fluid" />
+            <img src={Car9} className="img-fluid" alt="UVC LED Air Purifier 3" />
           </Col>
         </Row>
         <Row className={ProductRow}>
           <Col>
-            <img src={Car7} className="img-fluid" />
+            <img src={Car7} className="img-fluid" alt="UVC LED Air Purifier 4"/>
           </Col>
         </Row>
         <Row className={ProductRow}>
           <Col>
-            <img src={Car8} className="img-fluid" />
+            <img src={Car8} className="img-fluid" alt="UVC LED Air Purifier 5" />
           </Col>
         </Row>
         
 
         <Row className={ProductRow}>
           <Col>
-            <img src={Car13} className="img-fluid" />
+            <img src={Car13} className="img-fluid" alt="UVC LED Air Purifier 6" />
           </Col>
         </Row>
         <Row className={ProductRow}>
           <Col>
-            <img src={Car12} className="img-fluid" />
+            <img src={Car12} className="img-fluid" alt="UVC LED Air Purifier 7" />
           </Col>
         </Row>
         <Row className={ProductRow}>
           <Col>
-            <img src={Car3} className="img-fluid" />
-          </Col>
-        </Row>
-
-        <Row className={ProductRow}>
-          <Col>
-            <img src={Car2} className="img-fluid" />
-          </Col>
-        </Row>
-        <Row className={ProductRow}>
-          <Col>
-            <img src={Car10} className="img-fluid" />
-          </Col>
-        </Row>
-        <Row className={ProductRow}>
-          <Col>
-            <img src={Car11} className="img-fluid" />
+            <img src={Car3} className="img-fluid" alt="UVC LED Air Purifier 8"/>
           </Col>
         </Row>
 
         <Row className={ProductRow}>
           <Col>
-            <img src={Car4} className="img-fluid" />
+            <img src={Car2} className="img-fluid" alt="UVC LED Air Purifier 9"/>
           </Col>
         </Row>
         <Row className={ProductRow}>
           <Col>
-            <img src={DataTable} className="img-fluid" />
+            <img src={Car10} className="img-fluid" alt="UVC LED Air Purifier 10"/>
+          </Col>
+        </Row>
+        <Row className={ProductRow}>
+          <Col>
+            <img src={Car11} className="img-fluid" alt="UVC LED Air Purifier 11" />
+          </Col>
+        </Row>
+
+        <Row className={ProductRow}>
+          <Col>
+            <img src={Car4} className="img-fluid" alt="UVC LED Air Purifier 12"/>
+          </Col>
+        </Row>
+        <Row className={ProductRow}>
+          <Col>
+            <img src={DataTable} className="img-fluid" alt="UVC LED Air Purifier - DataTable - COVID killing efficacy"/>
           </Col>
         </Row>
 

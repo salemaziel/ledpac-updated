@@ -47,7 +47,7 @@ const LSidebar = () => (
         <footer>
           <ul className="actions">
             <li>
-              <a href={UVCSterilizerSpecs} className="button" target="_blank">
+              <a href={UVCSterilizerSpecs} className="button" target="_blank" rel="noopener noreferrer">
                 Learn More
               </a>
             </li>

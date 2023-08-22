@@ -2,7 +2,6 @@ import React from "react";
 import { navigate } from "gatsby";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
-//import Button from 'react-bootstrap/Button'
 
 function encode(data) {
   return Object.keys(data)
@@ -46,8 +45,7 @@ const ContactForm = () => {
         <input type="hidden" name="form-name" value="ContactForm" />
 
         <Row>
-          {/*<Col>*/}
-          <Form.Group>
+          <Form.Group className="my-2">
             <label style={{ display: "none" }} htmlFor="name">
               Name
             </label>
@@ -62,8 +60,7 @@ const ContactForm = () => {
         </Row>
 
         <Row>
-          {/*<Col>*/}
-          <Form.Group>
+          <Form.Group className="my-2">
             <label htmlFor="email" style={{ display: "none" }}>
               Email
             </label>
@@ -76,11 +73,10 @@ const ContactForm = () => {
               onChange={handleChange}
             />
           </Form.Group>
-          {/*  </Col> 
-          <Col>*/}
+
         </Row>
         <Row>
-          <Form.Group>
+          <Form.Group className="my-2">
             <label htmlFor="tel" style={{ display: "none" }}>
               Phone
             </label>
@@ -92,11 +88,10 @@ const ContactForm = () => {
               onChange={handleChange}
             />
           </Form.Group>
-          {/* </Col> */}
         </Row>
 
         <Row>
-          <Form.Group>
+          <Form.Group className="my-2">
             <label htmlFor="textarea" style={{ display: "none" }}>
               Message
             </label>
@@ -108,7 +103,6 @@ const ContactForm = () => {
               onChange={handleChange}
             />
           </Form.Group>
-          {/* </Col> */}
         </Row>
 
         <Form.Group>

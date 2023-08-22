@@ -23,7 +23,6 @@ function ContentCardsSection(props) {
     >
       <div className={CardContainer}>
         <div style={{margin: 'auto', padding: '0'}}>
-        {/*<Fade left big> triggerOnce*/}
         <ContentCards
           items={[
             {
@@ -71,7 +70,6 @@ function ContentCardsSection(props) {
 
           ]}
         ></ContentCards>
-        {/*</Fade>*/}
         </div>
       </div>
     </Section>

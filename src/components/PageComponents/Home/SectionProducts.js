@@ -1,21 +1,24 @@
-import React from "react";
+import React from "react"
 
-import GuardianStorm1 from "../../../images/guardian/guardian-storm-light1.jpg";
+import GuardianStorm1 from "../../../images/guardian/guardian-storm-light1.jpg"
 
-import CobNewGen from "../../../images/cob/cob-new-gen.png";
+import CobNewGen from "../../../images/cob/cob-new-gen.png"
 import ProjectPics1_1 from "../../../images/solar/project-pictures1_1.jpg"
 
-import CarPurifier from '../../../images/mobile-air-purifier-disinfectant/car-disinfectant-pdf.jpg-003.jpg'
+import CarPurifier from "../../../images/mobile-air-purifier-disinfectant/car-disinfectant-pdf.jpg-003.jpg"
 
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import { Link } from "gatsby";
+import Container from "react-bootstrap/Container"
+//import Row from "react-bootstrap/Row"
+//import Col from "react-bootstrap/Col"
+//import { Link } from "gatsby"
 
-import { Content, ProductBox, CategoryRow, ProductTitle } from "../Products/products.module.css";
+import {
+  Content,
+} from "../Products/products.module.css"
 
-//import Fade from "react-reveal/Fade";
-import { Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal"
+
+import ProductBoxes from "./ProductBoxes"
 
 const SectionProducts = () => (
   <section>
@@ -23,308 +26,117 @@ const SectionProducts = () => (
       <div className={Content}>
         <div className="box alt">
           <div className="row gtr-uniform gtr-50">
-            <Fade bottom cascade triggerOnce>
-            <div className={ProductBox}>
-                <Row className={CategoryRow}>
-                  <Col>
-                    <span className="image fit">
-                      <Link to="/products/uvc-led-air-purifying-disinfector/">
-                        {" "}
-                        <img src={CarPurifier} alt="UVC LED air purifier" />
-                      </Link>
-                    </span>
-                  </Col>
-                  <Col>
-                    {" "}
-                    <h3 className={ProductTitle}>
-                      {" "}
-                      <Link to="/products/uvc-led-air-purifying-disinfector/">
-                      Mobile UVC LED Air Purifier &amp; Disinfector{" "}
-                      </Link>
-                    </h3>{" "}
-                    <p>
-                      <strong>NEW</strong> UVC LED Air Purifier and Disinfector you can take anywhere. Using a Type C USB port for charging, this device is perfect for your car, bedroom, or office.{" "}
-                    </p>
-                    <ul className="actions">
-                      <li>
-                        <Link
-                          to="/products/uvc-led-air-purifying-disinfector/"
-                          className="button"
-                        >
-                          Learn More
-                        </Link>
-                      </li>
-                    </ul>
-                  </Col>
-                </Row>
-              </div>
-
+            <Fade cascade triggerOnce damping={0.1}>
+              <ProductBoxes
+                imageUrl={CarPurifier}
+                imageAlt="UVC LED air purifier"
+                title="Mobile UVC LED Air Purifier & Disinfector"
+                description="UVC LED Air Purifier and Disinfector
+                      you can take anywhere. Using a Type C USB port for
+                      charging, this device is perfect for your car, bedroom, or
+                      office."
+                link="/products/uvc-led-air-purifying-disinfector/"
+                buttonText="Learn More"
+                isNew
+              />
               <br />
-
-            <div className={ProductBox}>
-                <Row className={CategoryRow}>
-                  <Col>
-                    <span className="image fit">
-                      <Link to="/products/guardian-storm-light">
-                        {" "}
-                        <img src={GuardianStorm1} alt="guardian storm light LEDs" />
-                      </Link>
-                    </span>
-                  </Col>
-                  <Col>
-                    {" "}
-                    <h3 className={ProductTitle}>
-                      {" "}
-                      <Link to="/products/guardian-storm-light">
-                      Guardian Storm Light Antiviral LED Panel{" "}
-                      </Link>
-                    </h3>{" "}
-                    <p>
-                      <strong>NEW</strong> This Anti virus LED panel Four-layer filter structure can effectively eliminate harmful gases such as indoor harmful bacteria, virus and formaldehyde.
-                      This latest LED panel with air circulation works as a regular LED panel light during disinfection with the nanosilver and titanium dioxide!{" "}
-                    </p>
-                    <ul className="actions">
-                      <li>
-                        <Link
-                          to="/products/guardian-storm-light"
-                          className="button"
-                        >
-                          Learn More
-                        </Link>
-                      </li>
-                    </ul>
-                  </Col>
-                </Row>
-              </div>
-
+              <ProductBoxes
+                imageUrl={GuardianStorm1}
+                imageAlt="guardian storm light LEDs"
+                title="Guardian Storm Light Antiviral LED Panel"
+                description="This Anti virus LED panel Four-layer
+                      filter structure can effectively eliminate harmful gases
+                      such as indoor harmful bacteria, virus and formaldehyde.
+                      This latest LED panel with air circulation works as a
+                      regular LED panel light during disinfection with the
+                      nanosilver and titanium dioxide!"
+                link="/products/guardian-storm-light"
+                buttonText="Learn More"
+                isNew
+              />
               <br />
-
-
-              <div className={ProductBox}>
-                <Row className={CategoryRow}>
-                  <Col>
-                    {" "}
-                    <span className="image fit">
-                      <Link to="/products/ultraviolet-led">
-                        <img
-                          src="https://res.cloudinary.com/dexdumfqy/image/upload/v1600366553/ledpac/uvc/UVC_hrz8w9.jpg"
-                          alt="UV LED Lights"
-                        />
-                      </Link>
-                    </span>
-                  </Col>
-                  <Col>
-                    <h3 className={ProductTitle}>
-                      <Link to="/products/ultraviolet-led">
-                        UltraViolet (UV) LED
-                      </Link>
-                    </h3>
-                    <p>
-                      <strong>NEW</strong> LEDpac patented UV-C XLP Microbe
+              <ProductBoxes
+                imageUrl="https://res.cloudinary.com/dexdumfqy/image/upload/v1600366553/ledpac/uvc/UVC_hrz8w9.jpg"
+                imageAlt="UV LED Lights"
+                title="UltraViolet (UV) LED"
+                description="LEDpac patented UV-C XLP Microbe
                       inactivator with close-surface handheld wand technology.
-                      Eradicate Covid-19 in seconds at the push of a button.{" "}
-                    </p>
-                    <ul className="actions">
-                      <li>
-                        <Link to="/products/ultraviolet-led" className="button">
-                          Learn More
-                        </Link>
-                      </li>
-                    </ul>
-                  </Col>
-                </Row>{" "}
-              </div>
-
+                      Eradicate Covid-19 in seconds at the push of a button."
+                link="/products/ultraviolet-led"
+                buttonText="Learn More"
+                isNew
+              />
               <br />
-
-              <div className={ProductBox}>
-                <Row className={CategoryRow}>
-                  <Col>
-                    {" "}
-                    <span className="image fit">
-                      <Link to="/products/solar-led">
-                        <img
-                          src={ProjectPics1_1}
-                          alt="Solar Powered LED Lights"
-                        />
-                      </Link>
-                    </span>
-                  </Col>
-                  <Col>
-                    {" "}
-                    <h3 className={ProductTitle}>
-                      <Link to="/products/solar-led">Solar Powered LED</Link>
-                    </h3>
-                    <p>
-                      <strong>NEW</strong> HiP solar LED illumination
+              <ProductBoxes
+                imageUrl={ProjectPics1_1}
+                imageAlt="Solar Powered LED Lights"
+                title="Solar Powered LED"
+                description="HiP solar LED illumination
                       breakthrough with bright reliable adjustable illumination,
                       powered by the sun. Lighting the darkness through the
-                      night using super-efficient white LEDs.{" "}
-                    </p>
-                    <ul className="actions">
-                      <li>
-                        <Link to="/products/solar-led" className="button">
-                          Learn More
-                        </Link>
-                      </li>
-                    </ul>
-                  </Col>
-                </Row>{" "}
-              </div>
-
+                      night using super-efficient white LEDs."
+                link="/products/solar-led"
+                buttonText="Learn More"
+                isNew
+              />
               <br />
-
-              <div className={ProductBox}>
-                <Row className={CategoryRow}>
-                  <Col>
-                    <span className="image fit">
-                      <Link to="/products/rgb-led">
-                        <img
-                          src="https://res.cloudinary.com/dexdumfqy/image/upload/v1600918845/ledpac/rgb/rgb-card_pgvi7c.png"
-                          alt="Spider COB LED Growlights Lights"
-                        />
-                      </Link>
-                    </span>
-                  </Col>
-                  <Col>
-                    <h3 className={ProductTitle}>
-                      <Link to="/products/rgb-led">
-                        Spider COB LED Growlights
-                      </Link>
-                    </h3>
-                    <p>
-                      <strong>NEW</strong> Spider RB LED Grow light systems,
+              <ProductBoxes
+                imageUrl="https://res.cloudinary.com/dexdumfqy/image/upload/v1600918845/ledpac/rgb/rgb-card_pgvi7c.png"
+                imageAlt="Spider COB LED Growlights Lights"
+                title="Spider COB LED Growlights"
+                description="Spider RB LED Grow light systems,
                       allowing the best color spectrum closest to the sun.
-                      Plants grow stronger faster night and day indoors.{" "}
-                    </p>
-                    <ul className="actions">
-                      <li>
-                        <Link to="/products/rgb-led" className="button">
-                          Learn More
-                        </Link>
-                      </li>
-                    </ul>
-                  </Col>
-                </Row>
-              </div>
-
+                      Plants grow stronger faster night and day indoors."
+                link="/products/rgb-led"
+                buttonText="Learn More"
+                isNew
+              />
               <br />
-
-              <div className={ProductBox}>
-                <Row className={CategoryRow}>
-                  <Col>
-                    <span className="image fit">
-                      <Link to="/products/nanolite-cob-led">
-                        {" "}
-                        <img src={CobNewGen} alt="NANOlite cob leds" />{" "}
-                      </Link>
-                    </span>
-                  </Col>
-                  <Col>
-                    {" "}
-                    <h3 className={ProductTitle}>
-                      {" "}
-                      <Link to="/products/nanolite-cob-led">
-                        NANOlite COB LED{" "}
-                      </Link>
-                    </h3>{" "}
-                    {/* <p>
-                    Chip-on-Board LEDs, also known as COBs, are the next and
-                    newest generation of LED lighting technology{" "}
-                  </p>*/}
-                    <p>
-                      <strong>NEW</strong> COB Innovation in linear LED
+              <ProductBoxes
+                imageUrl={CobNewGen}
+                imageAlt="NANOlite cob leds"
+                title="NANOlite COB LED"
+                description="COB Innovation in linear LED
                       lighting, NANOlite. Continuous, bright, reliable LED
                       illumination through entire product. Pure white or warm
-                      white with continuous illumination LED technology.{" "}
-                    </p>
-                    <ul className="actions">
-                      <li>
-                        <Link
-                          to="/products/nanolite-cob-led"
-                          className="button"
-                        >
-                          Learn More
-                        </Link>
-                      </li>
-                    </ul>
-                  </Col>
-                </Row>
-              </div>
-
+                      white with continuous illumination LED technology."
+                link="/products/nanolite-cob-led"
+                buttonText="Learn More"
+                isNew
+              />
               <br />
-
-              <div className={ProductBox}>
-                <Row className={CategoryRow}>
-                  <Col>
-                    <span className="image fit">
-                      <Link to="/products/">
-                        {" "}
-                        <img
-                          src="https://res.cloudinary.com/dexdumfqy/image/upload/v1600990210/ledpac/Logo-dark_r5kknc.png"
-                          alt="Water purification with UV LEDs"
-                        />{" "}
-                      </Link>
-                    </span>
-                  </Col>
-                  <Col>
-                    {" "}
-                    <h3 className={ProductTitle}>
-                      {" "}
-                      <Link to="/products/">UV-C LED Water Disinfectant </Link>
-                    </h3>{" "}
-                 
-                    <p>
-                      <strong>COMING SOON</strong> Watch for the new HiP UV-C
+              <ProductBoxes
+                imageUrl="https://res.cloudinary.com/dexdumfqy/image/upload/v1600990210/ledpac/Logo-dark_r5kknc.png"
+                imageAlt="Water purification with UV LEDs"
+                title="UV-C LED Water Disinfectant"
+                description="Watch for the new HiP UV-C
                       ultraviolet water disinfectant purification system.
-                      (Coming 2021) eradicating most viruses including Covid-
+                      eradicating most viruses including Covid-
                       19! This compact system will be charged by the sun and or
                       generated low voltage energy. Portable and smart water
-                      disinfection in record-breaking time.{" "}
-                    </p>
-               
-                  </Col>
-                </Row>
-              </div>
-
+                      disinfection in record-breaking time."
+                link="#"
+                buttonText="Learn More"
+                isComingSoon={true}
+              />
               <br />
-
-              <div className={ProductBox}>
-                <Row className={CategoryRow}>
-                  <Col>
-                    <span className="image fit">
-                      <Link to="/products/">
-                        {" "}
-                        <img
-                          src="https://res.cloudinary.com/dexdumfqy/image/upload/v1600990210/ledpac/Logo-dark_r5kknc.png"
-                          alt="222nm Far UVC Led Lights Coming Soon"
-                        />{" "}
-                      </Link>
-                    </span>
-                  </Col>
-                  <Col>
-                    {" "}
-                    <h3 className={ProductTitle}>
-                      {" "}
-                      <Link to="/products/">222NM Far UVC Lights </Link>
-                    </h3>{" "}
-
-                    <p>
-                      <strong>COMING SOON</strong> Watch for the new 222NM Far UV-C
-                      LED Light system. (Coming 2021)
-                    </p>
-                
-                  </Col>
-                </Row>
-              </div>
-
-
+              <ProductBoxes
+                imageUrl="https://res.cloudinary.com/dexdumfqy/image/upload/v1600990210/ledpac/Logo-dark_r5kknc.png"
+                imageAlt="222nm Far UVC Led Lights Coming Soon"
+                title="222NM Far UVC Lights"
+                description="Watch for the new 222NM Far
+                      UV-C LED Light system."
+                link="#"
+                buttonText="Learn More"
+                isComingSoon={true}
+              />
+              <br />
             </Fade>
           </div>
         </div>
       </div>
     </Container>
   </section>
-);
+)
 
-export default SectionProducts;
+export default SectionProducts

@@ -1,26 +1,35 @@
-import React from "react";
+import React from "react"
+import { graphql } from "gatsby"
 
-import Layout from "../../components/Layout/layout";
-import RgbPage from "../../components/PageComponents/Products/rgb/RgbPage";
-//import Seo from "../../components/seo";
+import Layout from "../../components/Layout/layout"
+import RgbPage from "../../components/PageComponents/Products/rgb/RgbPage"
+import SEO from "../../components/seoNew"
 //import SimpleReactLightbox from "simple-react-lightbox";
 
-//import { GatsbySeo } from "gatsby-plugin-next-seo";
-
 const Rgb = () => (
-    <Layout>
-        {/*<SimpleReactLightbox>*/}
+  <Layout>
+    {/*<SimpleReactLightbox>*/}
 
-      {/*<Seo title="Spider COB LED Growlights Lights" />*/}
-      {/*<GatsbySeo
-        title="Spider COB LED Growlights Lights"
-        description="Premium COB LED RBi GROWLIGHTS solutions for both commercial and residential gardening."
-/>*/}
-
-      <RgbPage />
-  {/*</SimpleReactLightbox>*/}
+    <RgbPage />
+    {/*</SimpleReactLightbox>*/}
   </Layout>
-
-);
+)
 
 export default Rgb
+
+export const Head = () => (
+  <SEO
+    title="Spider COB LED Growlights Lights | Lighting Solutions for San Diego County | LEDPac"
+    description="Premium COB LED RBi GROWLIGHTS solutions for both commercial and residential gardening."
+  />
+)
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

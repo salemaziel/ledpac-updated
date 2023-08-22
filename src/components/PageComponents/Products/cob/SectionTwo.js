@@ -18,7 +18,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import {Link} from 'gatsby'
 
-import {ProductBox, ProductRow, ProductTitle, CategoryRow, } from "./cob.module.css";
+import {ProductBox, ProductRow, ProductTitle } from "./cob.module.css";
 
 const SectionTwo = () => (
   <section>
@@ -40,7 +40,7 @@ const SectionTwo = () => (
             </Col>
             <Col>
               <span className="image fit">
-                <img src={CobNewGen} alt />
+                <img src={CobNewGen} alt="Chip On Board LEDs 1" />
               </span>
             </Col>
           </Row>
@@ -51,7 +51,7 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={CobLedStrip4} alt />
+              <img src={CobLedStrip4} alt="Chip On Board LEDs 2" />
             </span>
           </Col>
 
@@ -79,7 +79,7 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={CobLedStrip5} alt />
+              <img src={CobLedStrip5} alt="Chip On Board LEDs 3" />
             </span>
           </Col>
           <Col>
@@ -100,7 +100,7 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={CobConnector} alt />
+              <img src={CobConnector} alt="Chip On Board LEDs 4" />
             </span>
           </Col>
 
@@ -118,7 +118,7 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={CobLedStrip} alt />
+              <img src={CobLedStrip} alt="Chip On Board LEDs 5" />
             </span>
           </Col>
           <Col>
@@ -136,13 +136,13 @@ const SectionTwo = () => (
         <Row className={ProductRow}>
           <Col>
             <span className="image fit">
-              <img src={CobSpecs2} alt />
+              <img src={CobSpecs2} alt="Chip On Board LEDs 6" />
             </span>
           </Col>
 
           <Col>
             <span className="image fit">
-              <img src={CobSpecs} alt />
+              <img src={CobSpecs} alt="Chip On Board LEDs 7" />
             </span>
           </Col>
         </Row>

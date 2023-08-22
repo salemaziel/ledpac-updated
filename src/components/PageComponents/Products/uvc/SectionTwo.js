@@ -34,7 +34,7 @@ const SectionTwo = () => (
               <div className={ImageFit}>
                 <img
                   src={OneTwentyEight_VertSquare}
-                  alt /*style={{height: '100%'}}*/
+                  alt="UVC Microorganism Inactivation Wand - 128"
                 />
               </div>
             </Col>
@@ -97,8 +97,7 @@ const SectionTwo = () => (
               <div className={ImageFit}>
                 <img
                   src={TwentyFive_VertSquare}
-                  alt /*style={{height: '100%'}}*/
-                />
+                  alt="UVC Microorganism Inactivation Wand - 25" />
               </div>
             </Col>
             <Col>
@@ -153,7 +152,7 @@ const SectionTwo = () => (
           <Row className={CategoryRow}>
             <Col>
               <div className={ImageFit}>
-                <img src={Fifty_VertSquare} alt /*style={{height: '100%'}}*/ />
+                <img src={Fifty_VertSquare} alt="UVC Microorganism Inactivation Wand - 50" />
               </div>
             </Col>
             <Col>
@@ -210,7 +209,7 @@ const SectionTwo = () => (
               <div className={ImageFit}>
                 <img
                   src={Sixtyfour_VertSquare}
-                  alt /*style={{height: '100%'}}*/
+                  alt="UVC Microorganism Inactivation Wand - 64"
                 />
               </div>
             </Col>
@@ -268,7 +267,7 @@ const SectionTwo = () => (
               <div className={ImageFit}>
                 <img
                   src={Sixtyfourzero_VertSquare}
-                  alt /*style={{height: '100%'}}*/
+                  alt="UVC Microorganism Inactivation Wand - 640"
                 />
               </div>
             </Col>

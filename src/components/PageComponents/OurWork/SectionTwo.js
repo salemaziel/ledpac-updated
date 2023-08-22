@@ -80,8 +80,8 @@ const SectionTwo = () => {
       <Col><span className="image fit"><img src={Airport2} alt="Inside Indianapolis airport" style={{cursor: 'pointer'}} /></span></Col>
       </Row>
       <Row>
-      <Col><span className="image fit"><img src={Airport4} alt="Outside photo of red and blue LED lights at Indianapolis airport" style={{cursor: 'pointer'}}/></span></Col>
-      <Col><span className="image fit"><img src={Airport5} alt="Outside photo of blue LED lights at Indianapolis airport" style={{cursor: 'pointer'}}/></span></Col>
+      <Col><span className="image fit"><img src={Airport4} alt="red and blue LED lights at Indianapolis airport" style={{cursor: 'pointer'}}/></span></Col>
+      <Col><span className="image fit"><img src={Airport5} alt="blue LED lights at Indianapolis airport" style={{cursor: 'pointer'}}/></span></Col>
       <Col><span className="image fit"><img src={Airport3} alt="Red LED lights in terminal at Indianapolis airport" style={{cursor: 'pointer'}}/></span></Col>
       </Row>
       <Row>
@@ -95,12 +95,12 @@ const SectionTwo = () => {
       <Col><span className="image fit"><img src={Project80} alt="Stairwell lit by colored LED lights" style={{cursor: 'pointer'}} /></span></Col>
       </Row>
       <Row>
-      <Col><span className="image fit"><img src={Finley10} alt="Upclose photo of diodes for LED lighting" style={{cursor: 'pointer'}}/></span></Col>
+      <Col><span className="image fit"><img src={Finley10} alt="Upclose view of diodes for LED lighting" style={{cursor: 'pointer'}}/></span></Col>
       <Col><span className="image fit"><img src={Finley12} alt="Wine cellar with LED lighting fixtures" style={{cursor: 'pointer'}}/></span></Col>
       <Col><span className="image fit"><img src={Finley13} alt="Wine cellar and countertop with LED lighting fixtures" style={{cursor: 'pointer'}}/></span></Col>
       </Row>
       <Row>
-      <Col><span className="image fit"><img src={Finley8} alt="Wide angle photo of wine cellar and countertop with LED lighting fixtures" style={{cursor: 'pointer'}}/></span></Col>
+      <Col><span className="image fit"><img src={Finley8} alt="Wide angle view of wine cellar and countertop with LED lighting fixtures" style={{cursor: 'pointer'}}/></span></Col>
       <Col><span className="image fit"><img src={Finley1} alt="Marble countertop lit up by LED lighting" style={{cursor: 'pointer'}}/></span></Col>
       <Col><span className="image fit"><img src={Finley19} alt="LED lighting fixure above bathroom sink" style={{cursor: 'pointer'}}/></span></Col>
       </Row>

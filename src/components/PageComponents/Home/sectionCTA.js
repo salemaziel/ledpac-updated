@@ -3,13 +3,12 @@ import { Link } from "gatsby";
 import {cta, inner, actions} from "./home.module.css";
 
 import Col from "react-bootstrap/Col";
-//import Fade from 'react-reveal/Fade';
 import { Fade } from "react-awesome-reveal";
 
 
 const SectionCTA = () => (
   <section id="two" className={cta}>
-    <Fade bottom triggerOnce>
+    <Fade triggerOnce>
     <div className={inner}>
       <Col>
         <header>

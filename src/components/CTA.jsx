@@ -5,7 +5,7 @@ import {cta, inner, actions } from "./PageComponents/Home/home.module.css";
 import Col from "react-bootstrap/Col";
 
 
-const CTA = () => (
+const Cta = () => (
   <section id="two" className={cta}>
 
     <div className={inner}>
@@ -34,4 +34,4 @@ const CTA = () => (
   </section>
 );
 
-export default CTA;
+export default Cta;

@@ -1,27 +1,35 @@
-import React from "react";
-import Layout from "../../components/Layout/layout";
+import React from "react"
+import Layout from "../../components/Layout/layout"
+import { graphql } from "gatsby"
 
-import Page from "../../components/PageComponents/OurWork/Finley/Page";
+import Page from "../../components/PageComponents/OurWork/Finley/Page"
 //import SimpleReactLightbox from "simple-react-lightbox";
-//import Seo from "../../components/seo";
-
-//import { GatsbySeo } from 'gatsby-plugin-next-seo';
-
-
+import SEO from "../../components/seoNew"
 
 const Finley = () => (
-  
-    <Layout>
-      {/*<SimpleReactLightbox>*/}
-    {/*<Seo title="LED Light Residential Display" />*/}
-    {/*<GatsbySeo
-title='Case Study: Residential LED Light Installation'
-description='A case study on a residential installation project for a family home by LEDpac'
-/>*/}
+  <Layout>
+    {/*<SimpleReactLightbox>*/}
 
-      <Page />
-   
-  {/*</SimpleReactLightbox>*/}
+    <Page />
+
+    {/*</SimpleReactLightbox>*/}
   </Layout>
-);
-export default Finley;
+)
+export default Finley
+
+export const Head = () => (
+  <SEO
+    title="Case Study: Residential LED Light Installation | Lighting Solutions for San Diego County | LEDPac"
+    description="A case study on a residential installation project for a family home by LEDpac."
+  />
+)
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

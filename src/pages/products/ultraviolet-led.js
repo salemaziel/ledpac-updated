@@ -1,22 +1,31 @@
-import React from 'react'
+import React from "react"
+import { graphql } from "gatsby"
 
 import Layout from "../../components/Layout/layout"
-import UVCPage from '../../components/PageComponents/Products/uvc/UVCPage'
-//import Seo from "../../components/seo";
-
-//import { GatsbySeo } from 'gatsby-plugin-next-seo';
-
+import UVCPage from "../../components/PageComponents/Products/uvc/UVCPage"
+import SEO from "../../components/seoNew"
 
 const Uvc = () => (
-    <Layout>
-        {/*<Seo title="UltraViolet (UV-C) LED Lights" />*/}
-        {/*<GatsbySeo
-title='UltraViolet (UV-C) LED Lights'
-description="LEDpac's new powerful patented UV-C LED system design allows creating a matrix of HiP Ultraviolet disinfectant LED power unlike ever before"
-/>*/}
-        <UVCPage />
-    </Layout>
-
+  <Layout>
+    <UVCPage />
+  </Layout>
 )
 
 export default Uvc
+
+export const Head = () => (
+  <SEO
+    title="UltraViolet (UV-C) LED Lights | Lighting Solutions for San Diego County | LEDPac"
+    description="LEDpac's new powerful patented UV-C LED system design allows creating a matrix of HiP Ultraviolet disinfectant LED power unlike ever before"
+  />
+)
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

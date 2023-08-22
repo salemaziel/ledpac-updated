@@ -1,25 +1,34 @@
-import React from "react";
-import Layout from "../../components/Layout/layout";
+import React from "react"
+import Layout from "../../components/Layout/layout"
+import { graphql } from "gatsby"
 
-import Page from "../../components/PageComponents/OurWork/Costco/Page";
+import Page from "../../components/PageComponents/OurWork/Costco/Page"
 //import SimpleReactLightbox from "simple-react-lightbox";
-//import Seo from "../../components/seo";
-
-//import { GatsbySeo } from 'gatsby-plugin-next-seo';
-
+import SEO from "../../components/seoNew"
 
 const Costco = () => (
-    <Layout>
-        {/*<SimpleReactLightbox>*/}
+  <Layout>
+    {/*<SimpleReactLightbox>*/}
 
-    {/*<Seo title="Led Light Display Costco" />*/}
-    {/*<GatsbySeo
-title='Case Study: Costco LED Light Display' 
-description='A case study on an installation project for a Costco jewelry display by LEDpac'
-/>*/}
-      <Page />
-        {/*</SimpleReactLightbox>*/}
+    <Page />
+    {/*</SimpleReactLightbox>*/}
+  </Layout>
+)
+export default Costco
 
-    </Layout>
-);
-export default Costco;
+export const Head = () => (
+  <SEO
+    title="Case Study: Costco LED Light Display | Lighting Solutions for San Diego County | LEDPac"
+    description="A case study on an installation project for a Costco jewelry display by LEDpac."
+  />
+)
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

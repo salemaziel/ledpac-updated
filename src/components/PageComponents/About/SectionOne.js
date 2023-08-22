@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
-//import LSidebar from "./LSidebar";
 
-//import { Banner2 } from "../../../images/index";
 import Vimeo from "@u-wave/react-vimeo";
 
 import Container from "react-bootstrap/Container";

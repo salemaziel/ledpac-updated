@@ -48,7 +48,6 @@ const CovidCard = () => (
               </Card.Text>
             </Card.Body>
 
-            {/*<Card.Text>Last updated 3 mins ago</Card.Text>*/}
           </Card.ImgOverlay>
         </Link>
       </Card>
@@ -68,32 +67,9 @@ const CovidCard = () => (
               Fighting to Eradicate Covid 19 with UltraViolet Light
             </Card.Title>
             <Card.Body>
-              {/*<Card.Text>
-                <p className={CovidText}>
-                  LEDpac, LLC has partnered with The Global Lighting Project, a
-                  501 C3 organization, to offer one of its patented products
-                  containing Ultraviolet LED diodes that promise to quickly
-                  disinfect surfaces contaminated with the Covid-19 virus. The
-                  design and LED diodes contained in this new product exceed CDC
-                  requirements for devices that can kill COVID-19 in under 4
-                  seconds.{" "}
-                </p>
-
-                <p
-                  style={{
-                    marginLeft: "60%",
-                    color: "white",
-                    textShadow: "2px 2px 4px red",
-                    fontSize: "2rem",
-                    fontWeight: "600",
-                  }}
-                >
-                  Click to Learn More{" "}
-                </p>
-              </Card.Text>*/}
+            
             </Card.Body>
 
-            {/*<Card.Text>Last updated 3 mins ago</Card.Text>*/}
           </Card.ImgOverlay>
         </Link>
       </Card>

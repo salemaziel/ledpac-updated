@@ -28,16 +28,13 @@ import { Link } from "gatsby";
 const SectionOne = () => (
   <section id="main" className="wrapper sidebar right">
     <div className="inner">
-      <header
-        className="major" /* className={covidHeader}*/ /*style={{padding: '4rem', width: '100%', backgroundSize: 'cover', backgroundPosition: '50% 30%', backgroundRepeat: 'no-repeat', backgroundImage: `url(${Covid19Stats_1})` }}*/
-      >
+      <header className="major">
         <h2>Covid 19</h2>
         <p>UltraViolet LED Disinfectant Solutions</p>
       </header>
       {/* Content */}
 
 
-      {/*<Fade left big triggerOnce>*/}
       <div className="content">
         <p>
           The world has been turned upside down by the COVID-19 pandemic,

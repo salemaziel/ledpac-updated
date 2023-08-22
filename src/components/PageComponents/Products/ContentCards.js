@@ -11,7 +11,7 @@ function ContentCards(props) {
     <Row className="justify-content-center">
                 <CardGroup>
       {props.items.map((item, index) => (
-        <Col xs={12} md={4} lg={4} className="py-3" key={index}>
+        <Col xs={12} md={4} lg={4} className="py-3 px-3" key={index}>
           <Link to={item.link}>
           <Card>
             <AspectRatio ratio={1 / 0.65}>
@@ -22,7 +22,7 @@ function ContentCards(props) {
               ></Card.Img>
             </AspectRatio>
             <Card.Body style={{height: `300px`}}>
-              <Card.Title className="pb-3" as="h3">{item.title}</Card.Title>
+              <Card.Title className="pb-3 text-center" as="h3">{item.title}</Card.Title>
               <Card.Text>{item.body}</Card.Text>
             </Card.Body>
           </Card>

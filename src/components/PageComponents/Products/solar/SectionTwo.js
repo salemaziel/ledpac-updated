@@ -15,7 +15,7 @@ import {Link} from 'gatsby'
 
 //import DisplayPDF from './displaypdf'
 
-import {ProductBox, ProductRow, ProductTitle, } from "./solar.module.css";
+import {ProductBox, ProductRow, ProductTitle } from "./solar.module.css";
 
 const SectionTwo = () => (
   <section>

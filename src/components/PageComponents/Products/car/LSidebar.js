@@ -1,9 +1,7 @@
 import React from 'react'
-//import { Link } from 'gatsby'
 import Car4 from '../../../../images/mobile-air-purifier-disinfectant/car-0004_1.jpg'
 
 
-//import { Banner2 } from '../../../../images/index'
 import CarSpecSheet from '../../../../assets/Manual R9A-IS_MANUAL_for_car_disinfectant.pdf'
 //import ResearchReport from '../../../../assets/REPORT tSTUQL21AA0059-1_AAN01247_v1.000.pdf'
 import DataTable from '../../../../images/LEDpac_data_percentages-images/0001.jpg'
