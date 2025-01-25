@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 import CobNewGen from '../../../images/cob/cob-new-gen.png'
 import ProjectPics1_1 from '../../../images/solar/project-pictures1.jpg'
-import UVDisinfectLamp1 from '../../../images/uvc/uv-disinfection-lamp-1.jpg'
+//import UVDisinfectLamp1 from '../../../images/uvc/uv-disinfection-lamp-1.jpg'
 //import RGBGrow3 from '../../../images/rgb/growstrip3.jpg'
 
 
@@ -49,12 +49,12 @@ const LSidebar = () => (
   imageAlt="Solar Powered LED"
   link="/products/solar-led"
 />
-<SidebarSection
+{/*<SidebarSection
   title="UltraViolet LED"
   imageUrl={UVDisinfectLamp1}
   imageAlt="UltraViolet LED"
   link="/products/ultraviolet-led"
-/>
+/> */}
 
 
      {/*} <section>

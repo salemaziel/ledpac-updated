@@ -2,9 +2,9 @@ import React from "react";
 import Section from "./Section";
 import ContentCards from "./ContentCards";
 
-import GuardianStorm1 from '../../../images/guardian/guardian-storm-light1.jpg'
+//import GuardianStorm1 from '../../../images/guardian/guardian-storm-light1.jpg'
 
-import CarPurifier from '../../../images/mobile-air-purifier-disinfectant/car-disinfectant-pdf.jpg-003.jpg'
+//import CarPurifier from '../../../images/mobile-air-purifier-disinfectant/car-disinfectant-pdf.jpg-003.jpg'
 
 
 import { CardContainer } from './products.module.css'
@@ -25,7 +25,7 @@ function ContentCardsSection(props) {
         <div style={{margin: 'auto', padding: '0'}}>
         <ContentCards
           items={[
-            {
+       /*     {
               image: CarPurifier ,
               title: "Mobile UVC LED Air Purifier and Disinfector",
               body:
@@ -45,7 +45,7 @@ function ContentCardsSection(props) {
               body:
                 "NEW LEDpac UV-C  XLP Microbe inactivator. A patented ,close-surface handheld wand, eradicates Covid-19 in seconds at the push of a button.",
               link: "/products/ultraviolet-led"
-            },
+            }, */
             {
               image: "https://res.cloudinary.com/dexdumfqy/image/upload/v1593125624/ledpac/uvc/project-pictures1_1_yq7nqk.jpg",
               title: "Solar/White LED Lights",

@@ -1,11 +1,11 @@
 import React from "react"
 
-import GuardianStorm1 from "../../../images/guardian/guardian-storm-light1.jpg"
+//import GuardianStorm1 from "../../../images/guardian/guardian-storm-light1.jpg"
 
 import CobNewGen from "../../../images/cob/cob-new-gen.png"
 import ProjectPics1_1 from "../../../images/solar/project-pictures1_1.jpg"
 
-import CarPurifier from "../../../images/mobile-air-purifier-disinfectant/car-disinfectant-pdf.jpg-003.jpg"
+//import CarPurifier from "../../../images/mobile-air-purifier-disinfectant/car-disinfectant-pdf.jpg-003.jpg"
 
 import Container from "react-bootstrap/Container"
 //import Row from "react-bootstrap/Row"
@@ -27,7 +27,7 @@ const SectionProducts = () => (
         <div className="box alt">
           <div className="row gtr-uniform gtr-50">
             <Fade cascade triggerOnce damping={0.1}>
-              <ProductBoxes
+            {/*  <ProductBoxes
                 imageUrl={CarPurifier}
                 imageAlt="UVC LED air purifier"
                 title="Mobile UVC LED Air Purifier & Disinfector"
@@ -66,7 +66,7 @@ const SectionProducts = () => (
                 buttonText="Learn More"
                 isNew
               />
-              <br />
+              <br /> */}
               <ProductBoxes
                 imageUrl={ProjectPics1_1}
                 imageAlt="Solar Powered LED Lights"
@@ -105,7 +105,7 @@ const SectionProducts = () => (
                 isNew
               />
               <br />
-              <ProductBoxes
+            {/*  <ProductBoxes
                 imageUrl="https://res.cloudinary.com/dexdumfqy/image/upload/v1600990210/ledpac/Logo-dark_r5kknc.png"
                 imageAlt="Water purification with UV LEDs"
                 title="UV-C LED Water Disinfectant"
@@ -130,7 +130,7 @@ const SectionProducts = () => (
                 buttonText="Learn More"
                 isComingSoon={true}
               />
-              <br />
+              <br />  */}
             </Fade>
           </div>
         </div>

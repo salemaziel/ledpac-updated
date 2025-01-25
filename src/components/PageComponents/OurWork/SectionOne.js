@@ -14,9 +14,10 @@ const SectionOne = () => (
       <header className="major">
         <h2>Our Work</h2>
       </header>
-      <div className="" style={{ width: "100%", marginBottom: "2em" }}>
+     {/* <div className="" style={{ width: "100%", marginBottom: "2em" }}>
         <CovidCard />
-      </div>
+      </div> 
+      */}
       <br />
       <br />
 
