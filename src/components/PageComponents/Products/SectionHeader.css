@@ -1,0 +1,8 @@
+.SectionHeader:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .SectionHeader__subtitle {
+    max-width: 700px;
+    display: inline-block;
+  }
+  
