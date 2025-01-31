@@ -1,9 +1,9 @@
-.AspectRatio {
+.aspectRatio {
   position: relative;
   width: 100%;
   height: 0;
 }
-.AspectRatio__inner {
+.inner {
   position: absolute;
   top: 0;
   right: 0;

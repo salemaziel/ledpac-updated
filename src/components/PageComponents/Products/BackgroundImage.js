@@ -1,10 +1,10 @@
 import React from "react";
-import "./BackgroundImage.scss";
+import {backgroundImage, repeat} from "./backgroundImage.module.css";
 
 function BackgroundImage(props) {
   return (
     <div
-      className={"BackgroundImage" + (props.repeat ? " repeat" : "")}
+      className={`${backgroundImage} ${props.repeat ? repeat : ""}`}
       style={{
         "--image": `url(${props.image})`,
         "--opacity": props.opacity,

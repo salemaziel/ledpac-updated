@@ -75,6 +75,7 @@ const SectionTwo = () => (
             imageAlt="Exterior LED Lighting"
             title="EXTERIOR OUTDOOR LED LIGHTING"
             description="Premium low-voltage high-lumen LED solutions for submersible and above grade outdoor landscape applications such as: fountains, ponds, reflecting pools, outdoor step-lighting, patio bar counters, exterior architectural features and more."
+            link="/products/exterior-led"
           />
 
           <Post
@@ -82,6 +83,7 @@ const SectionTwo = () => (
             imageAlt="Interior LED Illumination"
             title="Interior LED Illumination"
             description="LEDpac's Linear and Flexible solutions give premium long-living light to architectural features, soffits, step lighting, bar counters, built-in cabinetry, and more."
+            link="/products/interior-led"
           />
         </Fade>
       </div>

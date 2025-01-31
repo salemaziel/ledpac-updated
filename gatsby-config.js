@@ -15,14 +15,14 @@ const config = require('./config/site');
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        sassOptions: {
-          precision: 6,
-        },
-      },
-    },
+//    {
+//      resolve: `gatsby-plugin-sass`,
+//      options: {
+//        sassOptions: {
+//          precision: 6,
+//        },
+//      },
+//    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {

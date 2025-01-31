@@ -1,5 +1,7 @@
 import React from 'react'
 
+import HeroNew from './heroNew'
+
 import Hero from './hero'
 import SectionOne from './sectionOne'
 import SectionCTA from './sectionCTA'

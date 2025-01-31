@@ -2,12 +2,25 @@ import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/Layout/layout"
 
-import HomePage from "../components/PageComponents/Home/HomePage"
 import SEO from "../components/seoNew"
+
+//import Hero from "../components/PageComponents/Home/hero"
+//import HeroNew from "../components/PageComponents/Home/heroNew"
+import HeroNew2 from "../components/PageComponents/Home/heroNew2"
+import SectionProducts from "../components/PageComponents/Home/SectionProducts"
+import SectionTwo from "../components/PageComponents/Home/sectionTwo"
+import SectionCTA from "../components/PageComponents/Home/sectionCTA"
+
 
 const IndexPage = () => (
   <Layout>
-    <HomePage />
+    {/*<Hero /> */}
+    <HeroNew2 />
+
+    <SectionProducts />
+    <SectionTwo />
+    <SectionCTA />
+
   </Layout>
 )
 

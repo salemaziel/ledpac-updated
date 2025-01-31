@@ -1,15 +1,15 @@
 import React from "react";
-import "./AspectRatio.scss";
+import { aspectRatio, inner} from "./AspectRatio.module.css";
 
 function AspectRatio(props) {
   return (
     <div
-      className="AspectRatio"
+      className={aspectRatio}
       style={{
         paddingBottom: (1 / props.ratio) * 100 + "%",
       }}
     >
-      <div className="AspectRatio__inner">{props.children}</div>
+      <div className={inner}>{props.children}</div>
     </div>
   );
 }

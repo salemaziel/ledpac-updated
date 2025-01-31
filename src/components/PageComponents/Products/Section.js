@@ -1,6 +1,6 @@
 import React from "react";
 import BackgroundImage from "./BackgroundImage";
-import "./Section.scss";
+import {sectionComponent, whiteSection, container } from "./Section.module.css";
 
 function Section(props) {
   const {
@@ -16,12 +16,11 @@ function Section(props) {
 
   return (
     <section
-      className={
-        "SectionComponent py-5 position-relative" +
-        (props.bg ? ` bg-${props.bg}` : "") +
-        (props.textColor ? ` text-${props.textColor}` : "") +
-        (className ? ` ${className}` : "")
-      }
+      className={`${sectionComponent} py-5 position-relative
+        ${bg ? `bg-${bg}` : ''}
+        ${textColor ? `text-${textColor}` : ''}
+        ${bg === 'white' ? whiteSection : ''}
+        ${className || ''}`}
       {...otherProps}
     >
       {bgImage && (
@@ -29,17 +28,15 @@ function Section(props) {
           image={bgImage}
           opacity={bgImageOpacity}
           repeat={bgImageRepeat}
-        ></BackgroundImage>
+        />
       )}
 
       <div
-        className={
-          "" +
-          (["md", "lg"].includes(props.size) ? " py-md-5" : "") +
-          (props.size === "lg" ? " my-md-5" : "")
-        }
+        className={`${container}
+          ${["md", "lg"].includes(props.size) ? "py-md-5" : ""}
+          ${props.size === "lg" ? "my-md-5" : ""}`}
       >
-        {props.children}
+        {children}
       </div>
     </section>
   );
